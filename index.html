@@ -55,9 +55,39 @@
       <div class="work-toolbar"><div class="filter-group" role="group" aria-label="Filter projects"><button class="filter active" data-filter="all" aria-pressed="true">All work <span>02</span></button><button class="filter" data-filter="hardware" aria-pressed="false">Hardware</button><button class="filter" data-filter="ai" aria-pressed="false">AI &amp; software</button></div><span class="mono work-count" aria-live="polite">2 PROJECTS</span></div>
       <div class="project-grid">
         <article class="project-card" data-category="hardware">
-          <button class="project-visual audio-visual" data-project="audio" aria-label="Explore the audio amplifier project"><span class="visual-label mono">CIRCUITS / ECE 2115</span><div class="audio-graphic" aria-hidden="true"><span class="audio-large">TURN IT<br><span>UP.</span></span><svg viewBox="0 0 500 170" fill="none"><path class="wave-input" d="M0 85C12 85 12 55 25 55S38 115 50 115S63 55 75 55S88 115 100 115S113 55 125 55S138 115 150 115S163 55 175 55S188 115 200 115S213 55 225 55S238 115 250 115S263 55 275 55S288 115 300 115S313 55 325 55S338 115 350 115S363 55 375 55S388 115 400 115S413 55 425 55S438 115 450 115S463 55 475 55S488 85 500 85" stroke="#c4a7fc" stroke-width="1.5"/><path d="M0 85C15 85 15 10 31 10S47 160 63 160S79 10 95 10S111 160 127 160S143 10 159 10S175 160 191 160S207 10 223 10S239 160 255 160S271 10 287 10S303 160 319 160S335 10 351 10S367 160 383 160S399 10 415 10S431 160 447 160S463 10 479 10S491 85 500 85" stroke="#ccff89" stroke-width="2.5"/></svg><div class="audio-knobs"><span>LOW</span><i></i><span>HIGH</span><i></i><span>GAIN</span><i></i></div></div><span class="visual-footer mono">LM386 / BASS &amp; TREBLE <span>↗</span></span></button>
-          <div class="project-info"><div class="project-type mono"><span>01</span>HARDWARE / COURSE PROJECT</div><h3>Building an audio amplifier.</h3><p>I built an LM386 speaker amplifier with bass and treble filters, then used an oscilloscope and function generator to test how it behaved.</p><div class="project-meta"><span class="tech-list">Analog circuits · Filters · Measurement</span><button class="project-open" data-project="audio" aria-label="Read the audio amplifier project">Read story <span aria-hidden="true">↗</span></button></div></div>
-        </article>
+  <button class="project-visual audio-visual"
+          data-project="audio"
+          aria-label="Explore the Class AB audio amplifier project">
+    <span class="visual-label mono">CIRCUITS / ECE 2115</span>
+    <img class="amplifier-photo"
+         src="audio-amplifier.png"
+         alt="Our breadboard audio amplifier connected to a speaker"
+         loading="lazy">
+    <span class="visual-footer mono">
+      CLASS AB / BUILT &amp; TESTED <span>↗</span>
+    </span>
+  </button>
+
+  <div class="project-info">
+    <div class="project-type mono">
+      <span>01</span>HARDWARE / TEAM PROJECT
+    </div>
+    <h3>Building a Class AB audio amplifier.</h3>
+    <p>As part of a three-person team, I built and tested a
+      Class AB audio amplifier to drive an 8-ohm speaker.
+      We compared hand calculations, Multisim simulations,
+      and lab measurements to evaluate its performance.</p>
+    <div class="project-meta">
+      <span class="tech-list">
+        Analog circuits · Multisim · Bench testing
+      </span>
+      <button class="project-open" data-project="audio"
+              aria-label="Read the audio amplifier project">
+        Read story <span aria-hidden="true">↗</span>
+      </button>
+    </div>
+  </div>
+</article>
         <article class="project-card" data-category="ai">
           <button class="project-visual agent-visual" data-project="agent" aria-label="Explore the AI agent project"><span class="visual-label mono">AI SYSTEMS / ECE 1020</span><div class="agent-graphic" aria-hidden="true"><div class="agent-window"><div class="window-header"><span></span><span></span><span></span><i class="mono">agent.workflow</i></div><div class="agent-flow"><span class="flow-item"><span>↳</span>Input</span><i></i><span class="flow-item flow-brain"><span>✳</span>Reason</span><i></i><span class="flow-item"><span>↗</span>Respond</span></div><div class="agent-terminal mono"><span>› connect workflow</span><span>› call model</span><span class="terminal-success">✓ return response<span class="terminal-cursor">▌</span></span></div></div></div><span class="visual-footer mono">OPENAI API × N8N × GITHUB PAGES <span>↗</span></span></button>
           <div class="project-info"><div class="project-type mono"><span>02</span>AI / COURSE PROJECT</div><h3>Building an AI agent.</h3><p>I connected n8n and the OpenAI API to a web interface, added tool-based memory, and worked through the bugs in how it handled responses.</p><div class="project-meta"><span class="tech-list">n8n · OpenAI API · GitHub Pages</span><button class="project-open" data-project="agent" aria-label="Read the AI agent project">Read story <span aria-hidden="true">↗</span></button></div></div>
