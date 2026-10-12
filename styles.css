@@ -35,3 +35,17 @@ dialog{width:min(760px,calc(100% - 32px));max-height:calc(100dvh - 48px);color:v
 .project-card[hidden] {
   display: none !important;
 }
+.profile-photo {
+  width: 100%;
+  max-width: 260px;
+  margin: 0 auto 28px;
+}
+
+.profile-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 16px;
+}
