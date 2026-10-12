@@ -36,36 +36,36 @@ const projectStories = {
     ]
   },
   "audio": {
-    "category": "HARDWARE / ANALOG ELECTRONICS",
-    "kicker": "ECE 2115 · MAY 2026 · COURSE PROJECT",
-    "title": "Building an audio amplifier.",
-    "summary": "I designed and assembled an LM386-based speaker amplifier with bass and treble filters. This was a chance to build a real circuit and see how its behavior compared with the design.",
-    "sections": [
-      [
-        "The build",
-        "I put together an LM386 amplifier, bass and treble filtering, and signal-conditioning circuitry using discrete components to make a working prototype."
-      ],
-      [
-        "At the bench",
-        "I used an oscilloscope and function generator to measure frequency response, voltage gain, and output behavior. I also worked through circuit issues to reduce distortion and improve the audio."
-      ],
-      [
-        "What I learned",
-        "Being able to see the signal helped me understand what the circuit was doing. Testing and troubleshooting were just as much a part of the project as putting it together."
-      ],
-      [
-        "About the graphic",
-        "The waveforms on the project card are an illustration, not measured project data."
-      ]
+  "category": "HARDWARE / ANALOG ELECTRONICS",
+  "kicker": "ECE 2115 · SPRING 2026",
+  "title": "Designing and testing a Class AB audio amplifier.",
+  "summary": "I worked on a multi-stage transistor amplifier that combines voltage amplification and a current-driving output stage for an 8-ohm speaker. The project connected circuit analysis, Multisim simulation, and physical testing.",
+  "sections": [
+    [
+      "Circuit architecture",
+      "The system integrates a regulated ±12 V supply, a 2N3904 common-emitter voltage stage, and a complementary Darlington push-pull output stage. Diode biasing reduces crossover distortion near the signal’s zero crossing."
     ],
-    "tags": [
-      "LM386",
-      "Analog circuits",
-      "Bass & treble filters",
-      "Oscilloscope",
-      "Function generator"
+    [
+      "Analysis and simulation",
+      "The design process included DC operating-point calculations, small-signal gain analysis, and input and output resistance estimates. Multisim simulations provided a comparison before evaluating the breadboard circuit."
+    ],
+    [
+      "Bench validation",
+      "Testing used an oscilloscope, function generator, and multimeter to compare measured behavior with calculations and simulations. The report documents checks at 440 Hz, 1 kHz, and 10 kHz, including voltage gain and output amplitude."
+    ],
+    [
+      "Engineering takeaways",
+      "The project highlighted how transistor parameter variation, interstage loading, and bias conditions affect amplifier performance. Investigating differences between predicted and measured results strengthened my understanding of analog circuit troubleshooting."
     ]
-  },
+  ],
+  "tags": [
+    "Class AB",
+    "Transistor biasing",
+    "Small-signal analysis",
+    "Multisim",
+    "Bench validation"
+  ]
+},
   "agent": {
     "category": "AI / SOFTWARE SYSTEMS",
     "kicker": "ECE 1020 · APRIL 2025 · COURSE PROJECT",
