@@ -1,58 +1,101 @@
 'use strict';
 
 const projectStories = {
-  reasoning: {
-    category: 'AI / UNDERGRADUATE RESEARCH',
-    kicker: 'SUMMER 2026 · GEORGE WASHINGTON UNIVERSITY',
-    title: "When the problem isn't clear.",
-    summary: 'A research project examining how large language models reason about quantitative questions with missing, ambiguous, or contradictory information.',
-    sections: [
-      ['The question', 'A model can produce a confident answer even when the question does not support a single answer. This work looked at the structure of ill-posed problems and the assumptions needed to reason about them.'],
-      ['My contribution', 'I built and validated a dataset of 500+ ill-posed quantitative reasoning problems using Python-based generation logic and K = 3 and K = 4 branch structures. I created multiple resolution paths, conflicting conditions, and hidden constraints while checking mathematical consistency.'],
-      ['How I approached it', 'I evaluated model responses for reasoning errors, branch inconsistencies, and unsupported conclusions. Identifying recurring failure patterns helped me refine the dataset validation process and flag problems that needed another look.'],
-      ['What I learned', 'Dataset quality takes careful review. A small change to an assumption can change whether a problem is solvable or whether its branches agree. This project made me pay closer attention to how a question is framed before judging the answer.'],
-      ['Research team', "Prof. Tian Lan's research group at GW, with mentorship from Sizhe Tang. Summer 2026."]
+  "reasoning": {
+    "category": "AI / UNDERGRADUATE RESEARCH",
+    "kicker": "SUMMER 2026 · GEORGE WASHINGTON UNIVERSITY",
+    "title": "LLM reasoning research.",
+    "summary": "I spent the summer working on a question I find interesting: what does an AI model do when a problem is missing information, is ambiguous, or contradicts itself?",
+    "sections": [
+      [
+        "The question",
+        "A model can give a confident answer even when a problem doesn't support one. We wanted to look more closely at how it deals with those situations."
+      ],
+      [
+        "What I worked on",
+        "I built and validated 500+ quantitative reasoning problems using Python, with K=3 and K=4 branching structures. The problems included multiple possible paths, conflicting conditions, and hidden constraints. I checked the math to make sure the branches made sense."
+      ],
+      [
+        "Testing the answers",
+        "I reviewed model responses for reasoning errors, inconsistent branches, and conclusions that weren't supported by the question. I used the recurring issues to refine the dataset and its validation process."
+      ],
+      [
+        "What stuck with me",
+        "Before judging an answer, you have to check whether the question gives you enough information. A small change to an assumption can change the whole problem."
+      ],
+      [
+        "The team",
+        "Prof. Tian Lan's research group at GW, with mentorship from Sizhe Tang. June–August 2026."
+      ]
     ],
-    tags: ['Python', 'LLM reasoning', 'Prompt evaluation', 'Dataset verification']
+    "tags": [
+      "Python",
+      "LLM reasoning",
+      "Prompt evaluation",
+      "Dataset validation"
+    ]
   },
-  fpga: {
-    category: 'HARDWARE / DIGITAL LOGIC',
-    kicker: 'COURSE PROJECT',
-    title: 'A little logic. Eight states.',
-    summary: 'A counter project using Verilog and an FPGA to connect a digital design with visible hardware outputs.',
-    sections: [
-      ['The idea', 'A counter is a small, useful way to see how sequential logic works. Each clock event advances the state, and the outputs represent that state in binary.'],
-      ['The work', 'I worked with Verilog and an FPGA as part of my digital logic coursework, building a counter and checking its output sequence. The project connected concepts from logic design to the behavior of actual hardware.'],
-      ['Try the concept', 'The browser demonstration on the project card shows a 3-bit counter. Step +1 advances through 000 to 111, then wraps back to 000. Auto runs the sequence at a slow pace, and Reset returns it to zero. The three lights show the individual binary bits.'],
-      ['What I learned', 'Hardware description languages require thinking about signals and state over time. It helped me connect the written design to clocked behavior and observable outputs.']
+  "audio": {
+    "category": "HARDWARE / ANALOG ELECTRONICS",
+    "kicker": "ECE 2115 · MAY 2026 · COURSE PROJECT",
+    "title": "Building an audio amplifier.",
+    "summary": "I designed and assembled an LM386-based speaker amplifier with bass and treble filters. This was a chance to build a real circuit and see how its behavior compared with the design.",
+    "sections": [
+      [
+        "The build",
+        "I put together an LM386 amplifier, bass and treble filtering, and signal-conditioning circuitry using discrete components to make a working prototype."
+      ],
+      [
+        "At the bench",
+        "I used an oscilloscope and function generator to measure frequency response, voltage gain, and output behavior. I also worked through circuit issues to reduce distortion and improve the audio."
+      ],
+      [
+        "What I learned",
+        "Being able to see the signal helped me understand what the circuit was doing. Testing and troubleshooting were just as much a part of the project as putting it together."
+      ],
+      [
+        "About the graphic",
+        "The waveforms on the project card are an illustration, not measured project data."
+      ]
     ],
-    tags: ['Verilog', 'FPGA', 'Binary states', 'Sequential logic']
+    "tags": [
+      "LM386",
+      "Analog circuits",
+      "Bass & treble filters",
+      "Oscilloscope",
+      "Function generator"
+    ]
   },
-  audio: {
-    category: 'HARDWARE / ANALOG ELECTRONICS',
-    kicker: 'ECE 2115 · MAY 2026 · COURSE PROJECT',
-    title: 'Making sound tangible.',
-    summary: 'An LM386 audio amplifier with bass and treble filters, built and tested as part of my electronics coursework.',
-    sections: [
-      ['The goal', 'Build an audio amplifier and explore how filtering changes a signal. The circuit used an LM386 amplifier with bass and treble filter stages.'],
-      ['The work', 'I designed and assembled the amplifier, integrating discrete components and signal-conditioning circuitry into a functional prototype. I characterized frequency response, voltage gain, and output behavior using an oscilloscope and function generator, then troubleshot the circuit to reduce distortion and improve audio quality.'],
-      ['What I learned', 'Working at the bench makes circuit concepts concrete. Measurements provide a way to check the behavior of a design and understand the effects of its filter stages.'],
-      ['About the visual', 'The waveforms on the project card are a stylized illustration of audio amplification. Project measurements are described here; the illustration does not display measured data.']
+  "agent": {
+    "category": "AI / SOFTWARE SYSTEMS",
+    "kicker": "ECE 1020 · APRIL 2025 · COURSE PROJECT",
+    "title": "Building an AI agent.",
+    "summary": "I built an interactive AI agent using the OpenAI API and n8n, with a web interface hosted on GitHub Pages.",
+    "sections": [
+      [
+        "Putting it together",
+        "I connected user input to an n8n workflow and the OpenAI API, then integrated tool-based memory and real-time responses."
+      ],
+      [
+        "Getting it to work",
+        "I tested and debugged the workflow to improve response handling and reliability, and to make the experience easier to use."
+      ],
+      [
+        "What I learned",
+        "There are a lot of pieces around the model. The interface, the workflow, and the way information moves between them all affect whether the agent works well."
+      ],
+      [
+        "Why I enjoyed it",
+        "I like seeing how the different parts of a system connect. This project gave me a chance to work on that from the software side."
+      ]
     ],
-    tags: ['LM386', 'Analog electronics', 'Bass & treble filters', 'Oscilloscope', 'Signal generator']
-  },
-  agent: {
-    category: 'AI / SOFTWARE SYSTEMS',
-    kicker: 'ECE 1020 · APRIL 2025 · COURSE PROJECT',
-    title: 'From a prompt to a workflow.',
-    summary: 'An AI agent project combining n8n, the OpenAI API, and a web interface hosted on GitHub Pages.',
-    sections: [
-      ['The idea', 'Connect a language model to a usable workflow and make that workflow accessible through a web interface.'],
-      ['The work', 'I built and deployed an interactive agent using the OpenAI API, n8n, and GitHub Pages. The workflow integrated user-input processing, tool-based memory, and real-time responses. I tested and debugged the application to improve response handling, reliability, and the user experience.'],
-      ['What I learned', 'Making an AI system work involves the surrounding pieces as well as the model: how information moves through the workflow, how the interface communicates with it, and how to evaluate the responses.'],
-      ['Why it matters to my interests', 'This project complements my hardware work. I enjoy understanding the different layers of a system and how they connect to produce something people can use.']
-    ],
-    tags: ['n8n', 'OpenAI API', 'GitHub Pages', 'AI workflows']
+    "tags": [
+      "n8n",
+      "OpenAI API",
+      "GitHub Pages",
+      "Tool-based memory",
+      "AI workflows"
+    ]
   }
 };
 
@@ -72,60 +115,6 @@ document.addEventListener('keydown', event => {
   }
 });
 
-let counter = 0;
-let counterTimer = null;
-const counterOutput = document.querySelector('#counter-value');
-const counterRun = document.querySelector('#counter-run');
-const counterMode = document.querySelector('#counter-mode');
-function renderCounter() {
-  counterOutput.textContent = String(counter);
-  counterOutput.setAttribute('aria-label', `Counter value ${counter}, binary ${counter.toString(2).padStart(3, '0')}`);
-  [0, 1, 2].forEach(bit => document.querySelector(`#led-${bit}`).classList.toggle('on', Boolean(counter & (1 << bit))));
-}
-function stopCounter() {
-  if (counterTimer !== null) window.clearInterval(counterTimer);
-  counterTimer = null;
-  counterRun.setAttribute('aria-pressed', 'false');
-  counterRun.textContent = 'Auto ↻';
-  counterMode.textContent = 'MANUAL';
-  counterOutput.setAttribute('aria-live', 'polite');
-}
-function advanceCounter() {
-  counter = (counter + 1) % 8;
-  renderCounter();
-}
-document.querySelector('#counter-step').addEventListener('click', () => {
-  stopCounter();
-  advanceCounter();
-});
-counterRun.addEventListener('click', () => {
-  if (counterTimer !== null) {
-    stopCounter();
-    return;
-  }
-  counterOutput.setAttribute('aria-live', 'off');
-  counterRun.textContent = 'Pause Ⅱ';
-  counterRun.setAttribute('aria-pressed', 'true');
-  counterMode.textContent = 'RUNNING';
-  advanceCounter();
-  counterTimer = window.setInterval(advanceCounter, 800);
-});
-document.querySelector('#counter-reset').addEventListener('click', () => {
-  stopCounter();
-  counter = 0;
-  renderCounter();
-});
-document.addEventListener('visibilitychange', () => {
-  if (document.hidden) stopCounter();
-});
-if ('IntersectionObserver' in window) {
-  const counterObserver = new IntersectionObserver(entries => {
-    if (!entries[0].isIntersecting) stopCounter();
-  });
-  counterObserver.observe(document.querySelector('.counter-demo'));
-}
-renderCounter();
-
 const filterButtons = document.querySelectorAll('.filter');
 const projectCards = document.querySelectorAll('.project-card');
 filterButtons.forEach(button => {
@@ -141,8 +130,8 @@ filterButtons.forEach(button => {
       card.hidden = selected !== 'all' && card.dataset.category !== selected;
       if (!card.hidden) visibleCount += 1;
     });
-    if (selected === 'ai') stopCounter();
-    document.querySelector('.work-count').textContent = `${visibleCount} PROJECTS`;
+    document.querySelector('.project-grid').dataset.filter = selected;
+    document.querySelector('.work-count').textContent = `${visibleCount} ${visibleCount === 1 ? 'PROJECT' : 'PROJECTS'}`;
   });
 });
 
@@ -151,7 +140,6 @@ let dialogTrigger = null;
 function openProject(key, trigger) {
   const project = projectStories[key];
   if (!project) return;
-  stopCounter();
   dialogTrigger = trigger;
   document.querySelector('#dialog-category').textContent = project.category;
   document.querySelector('#dialog-kicker').textContent = project.kicker;
@@ -211,3 +199,19 @@ document.querySelector('#copy-email').addEventListener('click', async () => {
     status.textContent = `COPY THIS ADDRESS: ${email}`;
   }
 });
+
+// A small amount of pointer tilt gives the decorative chip depth.
+const processorScene = document.querySelector('.advanced-hero');
+if (processorScene && typeof window !== 'undefined' && window.matchMedia('(hover: hover) and (pointer: fine)').matches && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  processorScene.addEventListener('pointermove', event => {
+    const bounds = processorScene.getBoundingClientRect();
+    const horizontal = (event.clientX - bounds.left) / bounds.width - 0.5;
+    const vertical = (event.clientY - bounds.top) / bounds.height - 0.5;
+    processorScene.style.setProperty('--scene-tilt-y', `${horizontal * 7}deg`);
+    processorScene.style.setProperty('--scene-tilt-x', `${vertical * -5}deg`);
+  });
+  processorScene.addEventListener('pointerleave', () => {
+    processorScene.style.setProperty('--scene-tilt-y', '0deg');
+    processorScene.style.setProperty('--scene-tilt-x', '0deg');
+  });
+}
