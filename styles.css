@@ -32,3 +32,6 @@ dialog{width:min(760px,calc(100% - 32px));max-height:calc(100dvh - 48px);color:v
 @media(max-width:620px){.project-grid[data-filter="hardware"]>.project-card,.project-grid[data-filter="ai"]>.project-card{display:block}.project-grid[data-filter="hardware"] .project-info,.project-grid[data-filter="ai"] .project-info{padding-top:18px}.advanced-hero{height:390px;max-width:440px;margin-top:16px}.processor-scene{width:118%;left:-9%;top:0}.scene-hardware{top:70px;right:0}.scene-software{top:18px;left:0}.scene-intelligence{bottom:48px;left:5px}.scene-label{font-size:8px;padding:10px}.scene-label small{font-size:10px}.advanced-hero .art-caption{font-size:6.5px;left:9px;bottom:1px}.advanced-hero .art-caption span:last-child{display:block;font-size:6px}}
 @media(max-width:360px){.advanced-hero{height:345px}.scene-label{padding:8px;font-size:7px}.scene-label small{font-size:9px}.scene-label svg{width:16px;height:16px}.scene-hardware{top:61px}.scene-software{top:9px}.scene-intelligence{bottom:43px}.advanced-hero .art-caption span:last-child{display:none}}
 @media(prefers-reduced-motion:reduce){.processor-scene{transform:none;transition:none;will-change:auto}}
+.project-card[hidden] {
+  display: none !important;
+}
